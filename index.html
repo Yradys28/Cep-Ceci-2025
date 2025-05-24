@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>CECI PLANTILLA</title>
+     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            /* CAMBIO: Opcional, para prevenir desbordamientos horizontales inesperados */
+            overflow-x: hidden; 
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/75 backdrop-blur-xl  shadow-md
+    transition-all duration-300 text-black h-16  flex justify-between items-center">
+            <div class="border ml-7">LOGO</div>
+            <img src="assets/icons/interface.png" alt="" class="h-[35px] w-[35px]" id="button-open">
+            <div class=" flex gap-5 font-semibold text-[15px] nav visible">
+                <button id="button-close">Cerrar</button>
+                <div id="nav-list">
+                    <a href="">Inicio</a>
+                    <a href="">Acerca de</a>
+                    <a href="">Agenda</a>
+                    <a href="">ponentes</a>
+                    <a href="">precios</a>
+                    <a href="">Contactos</a>
+                </div>
+            </div>
+            <div class="bg-black/90 text-white rounded-lg px-5 py-2 flex items-center justify-center mr-7">
+                <span class="">Registrarse</span>
+            </div>
+    </header>
+ 
+    <main class="flex flex-col flex-grow pt-16"> 
+
+        <section class="w-full min-h-screen  bg-gray-500 flex flex-col items-center">         
+            <div class="gap-9 mt-[115px] flex flex-col items-center">
+                <div class="text-center flex flex-col justify-center items-center gap-9">
+                    <span class="bg-black/90 text-white rounded-lg p-[5px]">01-03 Agosto 2025</span>
+                    <h1 class="text-white font-bold text-4xl mt-[-12px]">Titulo Principal <br> De nuestro congreso</h1>
+                    <p class="text-white text-xl">Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Eligendi, possimus.</p>
+                </div>
+                <div class="flex justify-between gap-7">
+                    <span class="border border-white bg-gray-100/10 text-white text-lg font-bold rounded-md h-11 w-50 flex justify-center items-center">Ver Programas</span>
+                </div>
+                <div class="flex gap-3 text-white">
+                    <div class="bg-gray-200/10  w-20 h-14 rounded-2xl">
+                        <span class="font-bold text-[42px] flex justify-center">00</span>
+                        <p class="flex justify-center">Dias</p>
+                    </div>
+                     <div class=" bg-gray-200/10  w-20 h-14 rounded-2xl">
+                        <span class="font-bold text-[42px] flex justify-center">00</span>
+                        <p class="flex justify-center">Horas</p>
+                    </div>
+                     <div class=" bg-gray-200/10  w-20 h-14 rounded-2xl">
+                        <span class="font-bold text-[42px] flex justify-center">00</span>
+                        <p class="flex justify-center">Minutos</p>
+                    </div>
+                     <div class="bg-gray-200/10  w-20 h-14 rounded-2xl">
+                        <span class="font-bold text-[42px] flex justify-center">00</span>
+                        <p class="flex justify-center">Segundos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-white py-8 px-4 sm:px-6 lg:px-8"> <div class="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto items-center"> 
+                <div class="w-full md:w-1/2"> <div class="flex flex-col">
+                        <span class="text-sm sm:text-base font-semibold text-gray-600 bg-gray-100 px-3 py-1 rounded-full mb-5 inline-block w-fit">
+                            Acerca del evento
+                        </span>
+                        <h1 class="text-black text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4 break-words">TITULO CONTENIDO - TITULO CONTENIDO</h1> 
+                        <p class="text-lg sm:text-xl text-gray-500 mb-8 break-words">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Exercitationem sint eos vitae atque. Temporibus labore possimus
+                        distinctio odit aspernatur quasi quisquam similique itaque consectetur? Magni.</p>
+                        <div class="grid grid-cols-2 gap-1 text-gray-700 text-lg"> 
+                            <div class="flex flex-col gap-2"> 
+                                <p class="font-semibold">Fecha Evento</p>
+                                <p class="font-semibold">Cantidad Asistentes</p>
+                            </div>
+                            <div class="flex flex-col gap-2"> 
+                                <p class="font-semibold">Centro de convenciones</p>
+                                <p class="font-semibold">Artistas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center items-center py-8"> <div class="bg-gray-300 w-full md:w-[85%] h-64 sm:h-80 lg:h-96 rounded-2xl"></div> 
+                    </div>
+            </div>
+        </section>
+
+        <section class="bg-white pb-8 px-4 sm:px-6 lg:px-8"> 
+            <div class="flex flex-col items-center justify-center text-center max-w-3xl mx-auto mb-12"> 
+                <span class="text-sm sm:text-base font-semibold text-gray-600 bg-gray-200 px-3 py-1 rounded-full mb-3 inline-block">Artistas y Ponentes</span>
+                <h1 class="text-black text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 break-words">Conoce a Nuestros Invitados</h1>
+                <p class="text-gray-500 text-lg sm:text-xl break-words">Los mejores artistas y expertos en tecnología se reúnen en este evento</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto"> 
+                <div class="h-[450px] sm:h-[500px] w-full border border-gray-300 rounded-lg flex flex-col overflow-hidden shadow-md"> 
+                    <span class="bg-gray-300 h-3/4 w-full rounded-t-lg"></span> <div class="h-1/4 flex flex-col justify-center px-4 py-2"> <p class="font-bold text-lg">Nombre Del Predicador</p>
+                        <p class="text-sm text-gray-600">Descripcion</p> </div>
+                </div>
+                <div class="h-[450px] sm:h-[500px] w-full border border-gray-300 rounded-lg flex flex-col overflow-hidden shadow-md"> 
+                    <span class="bg-gray-300 h-3/4 w-full rounded-t-lg"></span>
+                    <div class="h-1/4 flex flex-col justify-center px-4 py-2">
+                        <p class="font-bold text-lg">Nombre Del Predicador</p>
+                        <p class="text-sm text-gray-600">Descripcion</p>
+                    </div>
+                </div>
+                <div class="h-[450px] sm:h-[500px] w-full border border-gray-300 rounded-lg flex flex-col overflow-hidden shadow-md"> 
+                    <span class="bg-gray-300 h-3/4 w-full rounded-t-lg"></span>
+                    <div class="h-1/4 flex flex-col justify-center px-4 py-2">
+                        <p class="font-bold text-lg">Nombre Del Predicador</p>
+                        <p class="text-sm text-gray-600">Descripcion</p>
+                    </div>
+                </div>
+                <div class="h-[450px] sm:h-[500px] w-full border border-gray-300 rounded-lg flex flex-col overflow-hidden shadow-md"> 
+                    <span class="bg-gray-300 h-3/4 w-full rounded-t-lg"></span>
+                    <div class="h-1/4 flex flex-col justify-center px-4 py-2">
+                        <p class="font-bold text-lg">Nombre Del Predicador</p>
+                        <p class="text-sm text-gray-600">Descripcion</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-200 py-12 px-4 sm:px-6 lg:px-8 min-h-[700px]"> 
+            <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-12"> 
+                <span class="text-sm sm:text-base font-semibold text-gray-600 bg-gray-300 px-3 py-1 rounded-full mb-3 inline-block">Programa</span>
+                <h1 class="text-black text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 break-words">Agenda del Evento</h1>
+                <p class="text-gray-500 text-lg sm:text-xl break-words">Tres días llenos de actividades, conciertos y talleres para todos los gustos</p>
+            </div>
+            
+            <div class="bg-gray-300 rounded-lg flex flex-col sm:flex-row justify-around items-center h-auto sm:h-12 py-3 sm:py-0 mb-6 text-gray-700 text-sm sm:text-base max-w-6xl mx-auto"> 
+                <div class="px-4 py-1 sm:p-0">Día 1 - 01 de Agosto</div>
+                <div class="px-4 py-1 sm:p-0">Día 2 - 02 de Agosto</div>
+                <div class="px-4 py-1 sm:p-0">Día 3 - 03 de Agosto</div>
+            </div>
+
+            <div class="max-w-6xl mx-auto flex flex-col gap-6"> 
+                <div class="bg-white h-[200px] w-full shadow-sm rounded-lg"></div>
+                <div class="bg-white h-[200px] w-full shadow-sm rounded-lg"></div>
+                <div class="bg-white h-[200px] w-full shadow-sm rounded-lg"></div>
+                <div class="bg-white h-[200px] w-full shadow-sm rounded-lg"></div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
